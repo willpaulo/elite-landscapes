@@ -1,3 +1,11 @@
+#gallery .bg-black {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+#gallery .moveUp {
+}
+
 .margin {
   margin-top: 20px;
   display: flex;
@@ -62,7 +70,7 @@ section {
 #heroGallery {
   background: url("./assets/Final Images/hero.jpg") 50% 0 no-repeat;
   background-size: cover;
-  background-position: 50% 40%;
+  background-position: center;
   min-height: 650px;
   color: white;
   -webkit-font-smoothing: antialiased;
@@ -155,6 +163,7 @@ section {
 
 #est .parent p.lead {
   justify-self: center;
+  text-align: justify;
 }
 
 #est h1 {
@@ -165,7 +174,7 @@ section {
 #est p {
   font-size: 1.2em;
   padding: 15px;
-  margin: 10px;
+  /* margin: 10px; */
 }
 
 .center {
@@ -246,7 +255,7 @@ section {
   overflow: hidden;
 }
 
-#gallery .col-md-3 {
+#gallery .col-sm-3 {
   padding: 5px;
 }
 
@@ -356,6 +365,7 @@ footer p {
   font-size: 15px;
 }
 
+/* Mobile Landscape ----------------------------------------------------- */
 @media (min-width: 525px) {
   #hero .box1 {
     width: 500px;
@@ -364,6 +374,7 @@ footer p {
   }
 }
 
+/* Mobile Portrait ----------------------------------------------------- */
 @media (max-width: 500px) {
   section {
     padding: 20px 0;
@@ -388,7 +399,7 @@ footer p {
     margin-top: 20px;
   }
 
-  .fa {
+  .fa-angle-down {
     display: none;
     opacity: 0%;
     visibility: hidden;
@@ -398,23 +409,13 @@ footer p {
     width: 100%;
     overflow: hidden;
     margin: 5px 15px;
-    height: 200px;
+    height: 150px;
   }
   #info form {
     flex-grow: 1;
   }
   .margin {
     padding: 0px 20px;
-  }
-}
-
-@media (min-width: 768px) {
-  #gallery .bg-black {
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-  }
-  #gallery .moveUp {
   }
 }
 
@@ -480,5 +481,12 @@ footer p {
   }
   [class="bg-black"] {
     font-size: 100%;
+  }
+}
+
+@media only screen and (max-width: 321px) {
+  .btn {
+    font-size: 0.5em;
+    background-color: red;
   }
 }
